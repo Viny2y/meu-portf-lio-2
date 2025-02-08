@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Felix Pina - Meu Site Pessoal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        #home {
+            background: white;
+        }
+
+        #sobre, #curriculo, #blog, #contato {
+            background: #ddd;
+            margin: 10px 0;
+        }
+
+        /* Efeito de hover para links */
+        a {
+            text-decoration: none;
+            color: #000;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff6347;
+            transform: scale(1.1);
+        }
+
+        /* Seção "Bem-vindo ao meu site" */
+        .welcome {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .welcome img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Para deixar a imagem arredondada */
+            margin-bottom: 20px;
+        }
+
+        .welcome h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        /* Seções */
+        section {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Ajuste para telas pequenas */
+        @media (max-width: 600px) {
+            .welcome h1 {
+                font-size: 1.5em;
+            }
+        }
+
+        /* Imagens */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container-imagens {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 30px auto;
+            width: 80%;
+        }
+
+        .container-imagens img {
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        .imagem-pequena {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .imagem-pequena img {
+            width: 50%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 767px) {
+            body {
+                font-size: 14px;
+            }
+
+            .container-imagens {
+                flex-direction: column;
+            }
+
+            .container-imagens img {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao meu site!</h1>
+    </header>
+
+    <section class="welcome">
+        <img src="sua-imagem.jpg" alt="Kevin Felix Pina"> <!-- Substitua 'sua-imagem.jpg' pelo caminho correto da sua foto -->
+        <h1>Bem-vindo ao meu site!</h1>
+        <p>Olá, sou Kevin! Sou apaixonado por tecnologia, programação e sempre estou buscando aprender mais sobre cibersegurança e inovação. Aqui você encontra um pouco mais sobre minha trajetória.</p>
+    </section>
+
+    <section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out">
+        <h2>Sobre Mim</h2>
+        <p>Olá, sou Kevin! Sou apaixonado por tecnologia, programação e sempre estou buscando aprender mais sobre cibersegurança e inovação. Aqui você encontra um pouco mais sobre minha trajetória.</p>
+    </section>
+
+    <section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out">
+        <h2>Currículo</h2>
+        <p>Confira minha experiência profissional, formações e as habilidades que desenvolvi ao longo dos anos. Tenho interesse em atuar no desenvolvimento de software e em segurança da informação.</p>
+    </section>
+
+    <section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out">
+        <h2>Blog</h2>
+        <p>Aqui compartilho meus pensamentos sobre tecnologia, carreira e outras experiências que me ajudam a crescer e evoluir. Sinta-se à vontade para acompanhar!</p>
+    </section>
+
+    <section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo através das formas abaixo. Fico à disposição para novas oportunidades e colaborações.</p>
+    </section>
+
+    <section class="container-imagens">
+        <div class="imagem-pequena">
+            <img src="imagem1.jpg" alt="Imagem 1">
+        </div>
+        <div class="imagem-pequena">
+            <img src="imagem2.jpg" alt="Imagem 2">
+        </div>
+        <div class="imagem-pequena">
+            <img src="imagem3.jpg" alt="Imagem 3">
+        </div>
+    </section>
+
+    <!-- Inclusão do AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
